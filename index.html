@@ -14,9 +14,11 @@
 
     <!-- Carrusel de Imágenes -->
     <section id="carousel">
-        <div class="carousel-slide" style="background-image: url('https://via.placeholder.com/800x300/6c63ff/ffffff?text=Hotel+Vista+1');"></div>
-        <div class="carousel-slide" style="background-image: url('https://via.placeholder.com/800x300/333333/ffffff?text=Hotel+Vista+2');"></div>
-        <div class="carousel-slide" style="background-image: url('https://via.placeholder.com/800x300/555555/ffffff?text=Hotel+Vista+3');"></div>
+        <div class="carousel-slide slide1"></div>
+        <div class="carousel-slide slide2"></div>
+        <div class="carousel-slide slide3"></div>
+        <button id="prev-slide" aria-label="Anterior">⟨</button>
+        <button id="next-slide" aria-label="Siguiente">⟩</button>
     </section>
 
     <!-- Banner de Búsqueda Convertido en Tarjeta Flotante -->
@@ -50,11 +52,15 @@
                     <option value="5">5 Niños</option>
                 </select>
 
-                <button type="submit">Buscar Habitaciones</button>
+                <button type="submit" aria-label="Buscar habitaciones">Buscar Habitaciones</button>
             </form>
+
+            <!-- Mensajes de Error -->
+            <div id="error-message" style="display: none; color: red; margin-top: 10px; text-align: center;"></div>
         </div>
     </section>
 
     <script src="app.js"></script>
 </body>
 </html>
+
