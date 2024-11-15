@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservas de Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Hotel XYZ</h1>
+        <p>Reserva tu habitación en línea</p>
+    </header>
+
+    <!-- Carrusel de Imágenes -->
+    <section id="carousel">
+        <div class="carousel-slide" style="background-image: url('https://via.placeholder.com/800x300/6c63ff/ffffff?text=Hotel+Vista+1');"></div>
+        <div class="carousel-slide" style="background-image: url('https://via.placeholder.com/800x300/333333/ffffff?text=Hotel+Vista+2');"></div>
+        <div class="carousel-slide" style="background-image: url('https://via.placeholder.com/800x300/555555/ffffff?text=Hotel+Vista+3');"></div>
+    </section>
+
+    <!-- Banner de Búsqueda Convertido en Tarjeta Flotante -->
+    <section id="booking-banner">
+        <div class="card">
+            <form id="search-form">
+                <label for="checkin-date">Fecha de <br>Entrada:</label>
+                <input type="date" id="checkin-date" name="checkin-date" required>
+
+                <label for="checkout-date">Fecha de <br>Salida:</label>
+                <input type="date" id="checkout-date" name="checkout-date" required>
+
+                <!-- Apartado de Huéspedes -->
+                <label for="adults">Número de <br>Adultos:</label>
+                <select id="adults" name="adults" required>
+                    <option value="1">1 Adulto</option>
+                    <option value="2">2 Adultos</option>
+                    <option value="3">3 Adultos</option>
+                    <option value="4">4 Adultos</option>
+                    <option value="5">5 Adultos</option>
+                    <option value="6">6 Adultos</option>
+                </select>
+
+                <label for="children">Número de <br>Niños:</label>
+                <select id="children" name="children" required>
+                    <option value="0">0 Niños</option>
+                    <option value="1">1 Niño</option>
+                    <option value="2">2 Niños</option>
+                    <option value="3">3 Niños</option>
+                    <option value="4">4 Niños</option>
+                    <option value="5">5 Niños</option>
+                </select>
+
+                <button type="submit">Buscar Habitaciones</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
